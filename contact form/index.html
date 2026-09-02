@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Gradient background matching your design */
+      background: linear-gradient(135deg, #1b264f 0%, #2a3b7c 50%, #4f46e5 100%);
+      padding: 20px;
+    }
+
+    .form-container {
+      background-color: #4c629d;
+      padding: 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 650px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .form-title {
+      color: #f3f4f6;
+      text-align: center;
+      margin-bottom: 25px;
+      letter-spacing: 1.5px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .grid-inputs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    /* Mobile screens ke liye single column */
+    @media (max-width: 500px) {
+      .grid-inputs {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 16px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: 14px;
+      color: #333;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #777;
+    }
+
+    textarea {
+      border-radius: 8px;
+      height: 180px;
+      resize: vertical;
+      margin-bottom: 15px;
+      font-family: inherit;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #d1d5db;
+      border: none;
+      border-radius: 4px;
+      color: #222;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2 class="form-title">CONTACT ME !</h2>
+    
+    <form>
+      <div class="grid-inputs">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter your e-mail" required>
+        <input type="text" placeholder="Enter your Subject">
+        <input type="tel" placeholder="Enter your number">
+      </div>
+
+      <textarea placeholder="Enter your message" required></textarea>
+
+      <button type="submit" class="submit-btn">send a message</button>
+    </form>
+  </div>
+
+</body>
+</html>
