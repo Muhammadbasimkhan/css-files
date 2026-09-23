@@ -1,0 +1,119 @@
+.container {
+    display: flex;
+    border: solid 2px #1877F2;
+}
+
+* {
+    margin: 0%;
+
+
+}
+
+.left_box {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.left_box>div>img {
+    width: 450px;
+    height: 450px;
+
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #131314;
+
+}
+
+.right_box {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #131314;
+}
+
+#blue {
+    font-weight: 700;
+    color: #1877F2;
+}
+
+#logo {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 12px;
+    border: 1px solid gray;
+}
+
+.btn1 {
+    width: 100%;
+    height: 30px;
+    background-color: #1877F2;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgb(22, 18, 18);
+    margin-top: 20px;
+}
+h2{margin-bottom: 30px;}
+.btn1:hover {
+    background-color: #7894cd;
+}
+#color{
+    border: 2px solid #76a7df;
+    height: 400px;
+    width: 400px;
+    padding: 15px;
+    border-radius: 20px;
+} 
+p{
+    font-size: large;
+    font-family: 'Gill Sans';
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    display:flex ;
+    margin-top: 20px;
+}
+.btn2{
+    width: 100%;
+    height: 30px;
+    background-color: #ffffff;
+    color: rgb(14, 16, 18);
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid #1877F2;
+    margin-top: 20px;}
+    .btn2:hover{
+        background-color: #759bcd;
+    }
+    .metaa{
+       align-items: center;justify-content: center;
+        width: 150px;
+        height: 100px;
+       
+        position: absolute;
+        right: 225px;
+        bottom: 80px;
+    }

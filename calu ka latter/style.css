@@ -18,6 +18,9 @@ body {
 box-shadow:
     0 0 25px rgba(0, 255, 170, 0.18),
     inset 0 0 30px rgba(255, 200, 80, 0.08);
+     backdrop-filter: blur(6px);
+-webkit-backdrop-filter: blur(6px);
+
 }
 .calculator{font-size: larger;
     display: flex;
@@ -31,7 +34,7 @@ box-shadow:
         inset 0 0 20px rgba(0, 255, 204, 0.08);
    
 }
-button{  background: #101914;margin-top: 10px;
+button{  background: #101914;
     color: #f5d98b;
     border: 1px solid #526b5d;
     box-shadow: 0 0 8px rgba(255, 193, 7, 0.12);
@@ -40,7 +43,7 @@ button{  background: #101914;margin-top: 10px;
     height: 70px;font-size: larger;
     margin-bottom: 10px;
 }
-input{font-size: larger;
+input{font-size: larger;margin-bottom: 10px;
     padding: 35px;
      background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
@@ -61,4 +64,35 @@ input{font-size: larger;
         0 0 5px #ffb703,
         0 0 12px #ff8c00;
 
+}
+.my{
+    position: absolute;
+  left:20px; color: #ffffff;
+    text-shadow:
+         0 0 5px #22c55e,
+        0 0 10px #16a34a,
+        0 0 20px #15803d,
+        0 0 35px #064e3b;
+       
+   
+        font-family: 'Lucida Sans Unicode';
+        font-size: larger;
+        font-weight: bolder;
+        font-style: italic;
+        text-decoration: line-through;
+        
+         
+   
+}
+body::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    filter: blur(100px);
+    top: -150px;
+    left: -150px;
+    pointer-events: none;
 }
