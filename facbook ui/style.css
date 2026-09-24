@@ -115,5 +115,9 @@ p{
        
         position: absolute;
         right: 225px;
-        bottom: 80px;
+        bottom: 60px;
+    }
+    a{
+        color: #131314;
+        text-decoration: none;
     }
