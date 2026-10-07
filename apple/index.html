@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="style.css">
+
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+</head>
+
+<body>
+    <nav class="header">
+        <div class="part1">
+            <img class="apple-logo"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAAD4+Pj8/Pzy8vLv7+/KysrPz8+FhYXAwMDFxcVVVVV1dXUuLi4QEBC2trajo6Pb29vl5eVoaGiMjIwhISGZmZmrq6sZGRl7e3tQUFBfX18pKSlEREQzMzMICAg8PDzwBdRCAAAFoUlEQVR4nOWc2XbiMAyGXWcnQOKQPUB5/6ecMsCU2pIXsJWeM/990q/BlrWafYTW53nJ+3p2eYSFYrnrkm8azhhrXR4KCjUeNjG76ddALSln7HdBzRl7Uu7yaCiofR8/M/HtL4AqBfuhpFwf6tD8ZGLNZXWoNpKYmNitDdUrTKzarwzVK0iOmy8AVM5VJu50yviHKgEmJtze4RvqJAAmVq8LVUBMsduv5xtqCzGxwvEtfqHO4I/HHD+UZyjIGjCWub7GL1QCMfHDqlAt+KEG5/f4hBrlY/i29c6rQk0QU+R2wniHSiGowuko9g41QgdM88qbPEJBhjM5rQw1AN/JybcLANWpS6pZXnuVP6iTYjmz175TUKiqe/VV/qDmn1CNU6QXCmp5huLVS9vOP9R3SMyLF1f4Xf6gtg/bGQ/LC1b8Wf6gpq9ojydp9cZaesgf1HGe59PlzW90U+hM3sd4nsuynE9nBwPhAnW8LG09VFU11Plysfgjx7KvMpFwzpNGZJuqX3afXqF2edXw7yRBxEVtcHOnqpGTClGyaS18PjuobpsBfkmUDPMIP3Bcilh94GYvsoPpI9tA7Vo4cvp7vrVA5mmu8QeuErkeywzVtaDr/U9Jtf1x8J7aFPL2JKxJt02NUGVm/Au8qR/GaT9ViZqdAhQVmrVlgNr35v/6799Iiu2y5Bm2kAAleEShhzqC+QpfQnMxWqhZv5reVnp0h1JyvN61gReWBmprt5zekgC/FQ61gNkK3wJTVyjUbLWzw1BhUEj6K4AAy4BA7cmYWKEeOQhUTca0AZY6DDURLSjGweIkCNUFN1B3xfBRA0IBqYowTEgVEIKaHY7Vd5RgrisEBWbk/Iuj1VIAaqZhivEAEYAK6q58a0KZACiiFVXhTAAUjd0USBgEQxEdMNoakgJ1IDHm+tKIAkXy6zX6lJoM1ZH8eobyrQxVUvibiaGfQ4YCiz6+pTMHEBTFWWysSspQFEtKOGZdOoKwylwqlaBIYhhjTVmCgqvAfhUZE5MSFIXpFMYMsgRFsflMBkGBqgigzN04K0D1rlAUXuevhDI3KkhQm18I9fnfQrmuqf8XytlOUew+Z4tOAeV89lFYdGcvgSQzZWxmXAPKuNJX8KdY6giVU0AZZwskqJIkk2Ayn2tEM0wYGgHkuI8mWW1oPZGhaJKwqd5+ylA0eTxDR6oMRbL9vjagExRJKogZTmUZakdUU4s0GWsFaiTKomvnHpScJ9x8H0AZUv+HoBaqUp/GhCpQO6paH2MFluBXKw5Ui4rhKT0ViiJF9VAG59OBghHJmXwXXIdUoTpzw5RHRZAbCtT7yIzCTUJ1GQCoHS0U45VsR6EaMp1RuEvuBICgKPffTYUZSh0MCK3WDEUSJz8rPlpAHYihZOcKhCJsVLpKqWrBXUF0nUpXZfIRCEOdSK2CEkUgTV1UfUFXqbNRCNSZzNWDgnisUZDOKgCDbRgUOA0eRICbgPZ5kn0qIIJHoWjyL3BaCG/TpdmA4D0YONSFxFaBgbKmy5rCg4EnzHX96OGd9QSebtM2yQdf60jbhHacIPS5nCCBuxZqH9gFxfJ5+mmQsD8gmjgzzM2ENFYxOhFsgArYDadJxprGng7BWlHRRJDFLFYoE5poxrnNU2th8lXaW7LMUGHmQrQ1P4uhwxCpdf2tKjaTkLl3h13oGz2tZkZ9Z6xMVUi7QVa/NlTTs+8C5dVjj4yD5pZQezNV3FwVG9efxUUv1sPROjcmEf1yOu+OXzpf5qlQhqKf2S1uDrIfI0f3YJbL4eR4qDD3Qtjc4ucw234C3GMuanjC8nNKgVOTD1a3BDgN3PdSgBOnEz5NPC6DHA+llpc+uV1N0LX/Ztx5s8kNve4f3TKIx/dKmsH6/kXX+xLGJR++VLeHs9UtA+O8bfu6b6cZL+8p+gMZZ1HPM90kVAAAAABJRU5ErkJggg=="
+                alt="">
+
+        </div>
+        <div class="part2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <i class="fa-regular fa-grip-lines"></i>
+
+        </div>
+
+    </nav>
+    <hr>
+    <div class="body-1">
+        <div class="text">
+            <h1>iphone 18 Pro</h1>
+            <h2>Pro further.</h2>
+            <div class="buttons">
+                <button class="btn1">Learn more</button>
+                <button class="btn2">Buy</button>
+            </div>
+        </div>
+        <div class="iphone-img">
+            <img src="18.png" alt="">
+        </div>
+    </div>
+    <div class="body-2">
+        <div class="text-2">
+            <h1>iphone Duo</h1>
+            <h2>Hello, Hello.</h2>
+            <p>Pre-order starting 5:00 a.m. on PT on 10.16</p>
+            <p> Available starting 10.23</p>
+            <div class="buttons">
+                <button class="btn1">Learn more</button>
+                <button class="btn3">View Pricing</button>
+            </div>
+        </div>
+        <div class="iphone-img1">
+            <img class="img2" src="Screenshot 2026-10-05 230417.png" alt="">
+        </div>
+
+    </div>
+    <div class="body-12">
+        <div class="watch">
+            <img class="apple-logo1"
+                src="data:image/png;base64,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"
+                alt=""> &nbsp;<b class="h1"> WATCH SERIES 12</b>
+        </div>
+        <div class="iphone-img2">
+            <img src="https://www.apple.com/v/homepage/images/apple-watch-series-12/a/hero_apple_watch_series_12__n9rln7bzvwya_large_2x.jpg"
+                alt="">
+        </div>
+        <h3>The most accurate heart rate sensing in a wearable.<sup>1</sup></h3>
+        <div class="buttons">
+            <button class="btn1">Learn more</button>
+            <button class="btn2">Buy</button>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="left">
+            <div class="watch">
+                <img class="apple-logo1"
+                    src="data:image/png;base64,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"
+                    alt=""> &nbsp;<b class="h1"> WATCH ULTRA 4</b>
+            </div>
+            <h4>A battery you can't outrun.</h4>
+            <div class="buttons">
+                <button class="btn1">Learn more</button>
+                <button class="btn2">Buy</button>
+            </div>
+
+            <div class="iphone-img3">
+                <img src="https://www.apple.com/v/homepage/images/apple-watch-ultra-4/a/promo_apple_watch_ultra_4__e4r3qertak2u_large_2x.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div class="right">
+            <div class="text-2">
+                <h1>Macbook Air</h1>
+                <h2>Now surcharged by M5.</h2>
+                <div class="buttons">
+                    <button class="btn1">Learn more</button>
+                    <button class="btn3">Buy</button>
+                </div>
+
+            </div>
+            <div class="iphone-img4">
+                <img src="mac.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="left1">
+            <div class="text-3">
+                <h1>iPad <b class="air"><i>air</b></h1>
+                <h2>Now surcharged by M4.</h2></i>
+                <div class="buttons">
+                    <button class="btn1">Learn more</button>
+                    <button class="btn3">Buy</button>
+                </div>
+                <div class="iphone-img5">
+                    <img src="https://www.apple.com/v/homepage/images/ipad-air-m4/a/promo_ipad_air_m4__bgcv7t286k8y_large_2x.jpg"
+                        alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right1">
+            <div class="watch1">
+                <img class="apple-logo1"
+                    src="data:image/png;base64,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"
+                    alt=""> &nbsp;<b class="up"> Upgrade</b>
+            </div>
+            <p class="center">Love it.Lease it.Upgarde it.</p>
+            <div class="buttons">
+                <button class="btn1">Learn more</button>
+            </div>
+            <div class="iphone-img6">
+                <img src="https://www.apple.com/v/homepage/images/apple-upgrade/a/promo_apple_upgrade__jvn6udm4tx2e_large_2x.jpg"
+                    alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="container1">
+        <div class="right1">
+            <div class="watch1">
+                <img class="apple-logo1"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAYFBMVEUAAAD////5+fnw8PD09PRmZmbi4uL8/PzGxsbe3t6wsLDNzc1zc3Pq6urV1dVAQECqqqqNjY1TU1O/v796enpeXl4dHR0uLi4RERElJSUzMzOEhISfn59MTEyTk5OZmZmk5gAwAAAFcUlEQVR4nO2c2YKiMBBFM2wiu4CiuMz//+VoN9OtSS2JkxT9MPe5wdMkVFK3KqhfobXJymI3Zi6XqFAsi+JLOqm7CpeLgkJFZa8W/Rio/Avpx0A1V/WkweXSUFDR7fDMpMofANW06lXb9aGGk8Z0Wj8k/Fa6+nhtKJNJjU43CAAFMKnLylAdwKScppR/qAZiOrndwzdUpseCD93WhdpDTMdmVagBYlLVZk2oGhw8lTvexi/UDWRqXW/jFSoCmZwflF8oKGy6RnPfUDE8o5yWPe9QBcjUud/IJxQYo9JoVagEYpocQ5RvKChwnhxjuXeoEWBy2x34h4rMKXVwShdCQJlLzLV+81b+oLZ6spC6ByjvUNrubnLKiUNBlS9M+/emeEio9M0ZvsgfVP71zlXNG1H8Wf6gPmLnod8Vb8/vL/mDisuyyerEx61CO3n3JTHb3uVE6wC1Seqyu41VVZ1vRVlbzJu4uVTtPJ3umub2Wl2a2Gp9tobaduNryO53A8lVF6MeTu/JVnqxMIXsoOKiPxg/cA+QY4OMSpynJtHycvYDN5Q2UPFlRn7gvr5dgCjZ3PALHmo7eux5qKSDHtLTf77Pn4PApi7aI3nBQydy6FmoVz8V1rwblgmcFCNP9CFqHWKgIji9BP71tMvzCzjzEB3wjIKGqlP7H3HXDhtCEmprORTvqkdeQwoqdxiMN6ngdZKAgm0dv5rAZ4VDlYHH7lNgropCgd5lAO0doOpJCApysxGoiF4nfAqY7AjUeU0mBAo2dUIILEWAUEnwAPVXcHIIQokNHpKJQVBS0eCIObQQVM/fz4vQjBWAKvnbeRFuNphQm0qGiTBoTajQ+5VFlLtuQu1EmK5URmNCYamRX5G2jAGV8zf0oIpiMqFERm+i02QdKrbIqP5dZ5LJgNpKMHE1JB1KZH/AFdt0qKCJ3qIj54jqUBI7zpYzIDWoTGIntWOYdCiRKMXWlDUosFHFt1j7WIOCS9N+NbNuqQYlEc9TjkmD2gCFRO/iu3E0KIkNHl9+f4WKJKD4mpsGJRHQ/0P9h/It57dPAopdj9eAopMGAEoiTrmufSLLjGKLpNqCLOJMsf0BGpRtfeifxK7IK+ynVO8IJbLzZDu91tijs93pa2QzanaD2shUP5hTNHoyKuJvqD3dM6FDCVno9KK8isGh1JF8VOtYQcyqbJhmUjU1aqunQ0m56OTpLMPzFFn9HmrxLlADSqoIglXaQahEpuDwUIpRmeY+2FUeRpilZ0LJlWqVusKtQUDBSBAKcfVMqESqBvkpyOcHipAiu89vzeaWAYCSHb+7Uj2OQjVkue6Nvyp4qIs4lHasDYISKtg+SdteQVByi/KiQ8ZDifSYPUs3seEGHLFel0/peTwMJRuqjMo7DJXJlNwXGVnE6k1dCrCGEKhakMk0YbBGQQmf8VN6PCCgpHqoQF8W7fMUC6BA/oBCSc0qyMDG23RFPFk1Q4kWDlWL7GDARJnoshapJ4O/TPWjw2edvQp2P8km+eBMSNMLeZwg+GKDFERIKPC4s0dhfh59GiTsbg/94ARzbiZosEK9IO4wT8Bg9e5hnvsbGCyzSXEvlj2LFSoJPBK9QSzUJtDOiio68EfpwqyBZHXb4tBhiP3e1cnch+Tf25voQ+ZWZ0a929hMFdLuIKvnGMo1llge+fVKxTa7WEL5NGJce10IUS2Eh/152MZJFEXJ41R3Re0OjxbfFrQ/Ro4W4ttOn7fxgD5Yq2+qOJxtbyAvuz3Db3fUgZWLs9W5e5evACRGKtEPeCkqKo0Rv1p+9Mnt0wTR7+/C95x2bL9tPn7/fTtafwPD9XsJcdmdH+rKzOorA3EzdLfzrhsah4+8/AFrq0q5F6dm0gAAAABJRU5ErkJggg=="
+                    alt=""> &nbsp;<b class="up"> Card</b>
+            </div>
+            <p class="center">get up to 3% daily cash back</p>
+            <p class="center">with every purchase</p>
+            <div class="buttons">
+                <button class="btn1">Learn more</button>
+                <button class="btn3">Apply Now</button>
+            </div>
+            <div class="iphone-img7">
+                <img src="https://www.apple.com/v/homepage/images/apple-card/a/promo_apple_card__d8xz4kd4evwy_large_2x.jpg"
+                    alt="">
+            </div>
+        </div>
+        <div class="left2">
+
+            <img class="bg" src="background.jpg" alt="">
+
+            <div class="content4">
+                <div class="text4">
+                    <h1>Education</h1>
+                    <h4>Uplifting teachers uplifts us all</h4>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn1">Learn more</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="enter">
+        <h1 class="card">Entertainment</h1>
+        <img src="https://is1-ssl.mzstatic.com/image/thumb/Features/v4/47/76/ea/4776ea5e-5e00-a76b-c8f1-6fda44050f30/3dd9b6d8-a87a-4a15-80bb-0cc06dfa62d4.png/1960x1044sr.jpg"
+            alt="">
+    </div>
+<br><br><br><br><hr>
+   <div class="footer">
+
+    <div class="first">
+        <h5>Shop and Learn</h5>
+        <p class="foot">Store</p>
+        <p class="foot">Mac</p>
+        <p class="foot">iPad</p>
+        <p class="foot">iPhone</p>
+        <p class="foot">Watch</p>
+        <p class="foot">Vision</p>
+        <p class="foot">AirPods</p>
+        <p class="foot">TV & Home</p>
+        <p class="foot">AirTag</p>
+        <p class="foot">Accessories</p>
+        <p class="foot">Gift Cards</p>
+
+        <h5>Apple Wallet</h5>
+        <p class="foot">Wallet</p>
+        <p class="foot">Apple Card</p>
+        <p class="foot">Apple Pay</p>
+        <p class="foot">Apple Cash</p>
+    </div>
+
+    <div class="second">
+        <h5>Account</h5>
+        <p class="foot">Manage Your Apple Account</p>
+        <p class="foot">Apple Store Account</p>
+        <p class="foot">iCloud.com</p>
+
+        <h5>Entertainment</h5>
+        <p class="foot">Apple One</p>
+        <p class="foot">Apple TV+</p>
+        <p class="foot">Apple Music</p>
+        <p class="foot">Apple Arcade</p>
+        <p class="foot">Apple Fitness+</p>
+        <p class="foot">Apple News+</p>
+        <p class="foot">Apple Podcasts</p>
+        <p class="foot">Apple Books</p>
+        <p class="foot">App Store</p>
+    </div>
+
+    <div class="third">
+        <h5>Apple Store</h5>
+        <p class="foot">Find a Store</p>
+        <p class="foot">Genius Bar</p>
+        <p class="foot">Today at Apple</p>
+        <p class="foot">Group Reservations</p>
+        <p class="foot">Apple Camp</p>
+        <p class="foot">Apple Store App</p>
+        <p class="foot">Certified Refurbished</p>
+        <p class="foot">Apple Trade In</p>
+        <p class="foot">Financing</p>
+        <p class="foot">Order Status</p>
+        <p class="foot">Shopping Help</p>
+    </div>
+
+    <div class="fourth">
+        <h5>For Business</h5>
+        <p class="foot">Apple and Business</p>
+        <p class="foot">Shop for Business</p>
+
+        <h5>For Education</h5>
+        <p class="foot">Apple and Education</p>
+        <p class="foot">Shop for K-12</p>
+        <p class="foot">Shop for College</p>
+
+        <h5>For Healthcare</h5>
+        <p class="foot">Apple and Healthcare</p>
+
+        <h5>For Government</h5>
+        <p class="foot">Apple and Government</p>
+        <p class="foot">Shop for Veterans and Military</p>
+        <p class="foot">Shop for State and Local Employees</p>
+        <p class="foot">Shop for Federal Employees</p>
+    </div>
+
+    <div class="fifth">
+        <h5>Apple Values</h5>
+        <p class="foot">Accessibility</p>
+        <p class="foot">Education</p>
+        <p class="foot">Environment</p>
+        <p class="foot">Inclusion and Diversity</p>
+        <p class="foot">Privacy</p>
+        <p class="foot">Racial Equity and Justice</p>
+        <p class="foot">Supply Chain Innovation</p>
+
+        <h5>About Apple</h5>
+        <p class="foot">Newsroom</p>
+        <p class="foot">Apple Leadership</p>
+        <p class="foot">Career Opportunities</p>
+        <p class="foot">Investors</p>
+        <p class="foot">Ethics & Compliance</p>
+        <p class="foot">Events</p>
+        <p class="foot">Contact Apple</p>
+    </div>
+
+</div>
+</body>
+
+</html>

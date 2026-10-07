@@ -1,0 +1,486 @@
+.apple-logo {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header {
+    background-color: #1D1D1F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+}
+
+.part2 i {
+    color: #fff;
+}
+
+body {
+    width: 100%;
+    background-color: #fff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+
+
+.part2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px;
+}
+
+.body-1 {
+    width: 100%;
+    height: 550px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+    margin-top: 25px;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.text h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.buttons {
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons .btn1 {
+    height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    color: #fff;
+    background-color: #0071E3;
+    border: 2px solid #0071E3;
+    font-size: large;
+}
+
+.buttons .btn2 {
+    height: 50px;
+    width: 70px;
+    border-radius: 30px;
+    color: #0071E3;
+    background-color: #000000;
+    border: 2px solid #0071E3;
+    font-size: large;
+}
+
+.iphone-img {
+    margin-top: 30px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iphone-img img {
+    width: 80%;
+    object-fit: cover;
+
+}
+
+.body-2 {
+    width: 100%;
+    background-color: #F5F5F7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 560px;
+
+}
+
+button {
+    cursor: pointer;
+
+}
+
+.buttons .btn3 {
+    height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    color: #0071E3;
+    background-color: #fffcfc;
+    border: 2px solid #0071E3;
+    font-size: large;
+}
+
+.text-2 {
+    margin-top: 25px;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text-2 h1 {
+    font-size: 60px;
+    font-weight: 900;
+
+}
+
+.text-2 h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.iphone-img1 {
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.iphone-img1 img {
+    width: 450px;
+    height: 270px;
+    object-fit: cover;
+}
+
+p {
+    font-size: 20px;
+    color: gray;
+}
+
+.h1 {
+    margin-top: 5px;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+.watch {
+    margin-top: 30px;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.apple-logo1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.body-12 {
+    width: 100%;
+    height: 580px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.iphone-img2 {
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+display: flex;
+}
+
+.iphone-img2 img {
+    width: 80%;
+    object-fit: cover;
+    height: 370px;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.container1 {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.left {
+    width: 50%;
+    background-color: #000000;
+}
+
+.right {
+    width: 50%;
+    background-color: #E7F3F7;
+}
+
+.iphone-img3 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.iphone-img3 img {
+    width: 100%;
+    height: 350px;
+}
+
+h4 {
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.iphone-img4 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.iphone-img4 img {
+    width: 350px;
+    height: 330px;
+    object-fit: cover;
+}
+
+.left1 {
+    width: 50%;
+    background-color: #ABDBED;
+}
+
+.right1 {
+    width: 50%;
+    background-color: #F5F5F7;
+}
+
+.text-3 {
+    margin-top: 25px;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.air {
+    color: #0071E3;
+    font-family: cursive;
+    font-style: italic;
+    font-display: fallback;
+}
+
+.text-3 h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.text-3 h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.iphone-img5 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.iphone-img5 img {
+    width: 100%;
+    object-fit: cover;
+    height: 340px;
+}
+
+.apple-logo2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.watch1 {
+    margin-top: 30px;
+    color: #000000;
+    width: 100%;
+    display: flex;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+}
+
+.up {
+    font-size: 30px;
+}
+
+h3 {
+    color: #fcfbfb;
+    font-style: italic;
+}
+
+.iphone-img6 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.iphone-img6 img {
+    width: 100%;
+    object-fit: cover;
+    height: 370px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.iphone-img7 {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.iphone-img7 img {
+    width: 550px;
+    object-fit: cover;
+    height: 360px;
+}
+
+.left2 {
+    width: 50%;
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.text4 h1 {
+    color: white;
+    font-weight: 800;
+}
+
+.text4 h4 {
+    color: white;
+    font-weight: 200;
+    font-size: 25px
+}
+
+.buttons {
+    margin-top: 20px;
+}
+.enter{
+    width: 100%;
+    height: 560px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: 900;
+    text-decoration: dashed;
+  
+}
+.enter img{
+    width: 100%;
+    object-fit: cover;
+    height: 90%;
+}
+.textarea{
+    padding: 15px;
+    margin-top: 30px;
+   
+}
+.footer{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 3px;
+}
+.first{
+    width: 25%;
+}
+.second{
+    width: 25%;
+}
+.third{
+    width: 25%;
+}
+.fourth{
+    width: 25%;
+}
+.foot{
+    color: grey;
+    font-size: small;
+}

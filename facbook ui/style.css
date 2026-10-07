@@ -1,11 +1,11 @@
 .container {
     display: flex;
-    border: solid 2px #1877F2;
+    
 }
 
 * {
-    margin: 0%;
-
+   margin: 0%;
+box-sizing: border-box;
 
 }
 
@@ -80,13 +80,16 @@ h2{margin-bottom: 30px;}
 .btn1:hover {
     background-color: #7894cd;
 }
-#color{
-    border: 2px solid #76a7df;
-    height: 400px;
-    width: 400px;
-    padding: 15px;
-    border-radius: 20px;
-} 
+
+  #color{
+width: 100%;
+max-width: 400px;
+min-width: 280px;
+border: 2px solid #2978d3;
+padding: 15px;
+border-radius: 20px;
+}
+
 p{
     font-size: large;
     font-family: 'Gill Sans';
@@ -109,15 +112,80 @@ p{
         background-color: #759bcd;
     }
     .metaa{
-       align-items: center;justify-content: center;
-        width: 150px;
-        height: 100px;
-       
-        position: absolute;
-        right: 225px;
-        bottom: 70px;
-    }
+     display: block;
+width: 120px;
+height: 80px;
+margin: 20px auto 0;
+   }
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.right_box {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+input,
+button {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+    
     a{
         color: #131314;
         text-decoration: none;
     }
+   @media only screen and (max-width: 1024px) {
+
+    .container .left_box {
+        display: none;
+    }
+
+    .container .right_box {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+
+    .container {
+        width: 100%;
+      
+    }
+
+    .container .right_box {
+        width: 100%;
+        margin: auto;
+     
+    }
+}
+@media only screen and (max-width: 375px) {
+
+    .right_box{
+        width: 100%;
+        padding: 10px;
+    }
+
+  
+
+    .metaa{
+        display: block;
+        margin: 20px auto;
+    }
+}
