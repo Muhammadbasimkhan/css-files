@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UP WORK</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link
+        href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="header">
+        <div class="item"><img class="logo"
+                src="data:image/png;base64,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"
+                alt=""><br>
+            <a href="Hire talent">Hire talent</a>
+            <a href="Get outcomes">Get outcomes</a>
+            <a href="Find work">Find work</a>
+            <a href="Pricing">Pricing</a>
+            <a href="Enterprise">Enterprise</a>
+        </div>
+        <div class="buttons"><button class="btn1">login</button>
+            <button class="btn2">Sign up</button>
+        </div>
+    </nav>
+    <div class="line">
+        <div class="hire">
+            <h2>Hire the top 1% of talent on Business Plus.</h2>
+        </div>
+        <div class="start"><a class="btn" href="">Get started ></a></div>
+    </div>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Work at the speed of <br>your ambition</h1>
+            <p>Hire experts who use AI to amplify their talent, turning complex work into high impact business outcomes
+            </p>
+        </div>
+        <div class="toggle-container">
+            <button class="toggle-btn active">I want to hire</button>
+            <button class="toggle-btn">I want to work</button>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Describe what you need to hire for...">
+            <button class="search-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                Search
+            </button>
+        </div>
+
+        <div class="tags-container">
+            <a href="#" class="tag-btn">Web design &rarr;</a>
+            <a href="#" class="tag-btn">AI development &rarr;</a>
+            <a href="#" class="tag-btn">Video editing &rarr;</a>
+            <a href="#" class="tag-btn">Google Ads &rarr;</a>
+        </div>
+    </section>
+    <h3 class="center">Trusted by 800,000 clients</h3>
+    <div class="clients">
+        <div class="img"><img
+                src="data:image/png;base64,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"
+                alt=""></div>
+        <div class="img"><img
+                src="data:image/png;base64,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"
+                alt=""></div>
+        <div class="img"><img
+                src="data:image/png;base64,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"
+                alt=""></div>
+        <div class="img"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnalNZlrxS2_20s2t0vgmrv-cml4GJjkdt5782nbzgg&s=10"
+                alt=""></div>
+        <div class="img"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24biC_n_zokNcI0UptspuVGTZ8NcKeC2l0qQXjSm8Rg&s=10"
+                alt=""></div>
+        <div class="img"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkgExqmNsHSIquB7xrED22UKqSyq9vQH7EMhhYNai3Tg&s=10"
+                alt=""></div>
+        <div class="img"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROnuxENsAPmytlnxePjmD3sW25LchIxxbAx4blWjr9VA&s=10"
+                alt=""></div>
+        <div class="img"><img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUtu1gel5Qm0MsJAR4Njsq8RmqR5JHczXc5R2wIr4oMQ&s=10"
+                alt=""></div>
+    </div>
+    <h1 class="margin">Find freelancers for any type of work</h1>
+    <div class="cards">
+        <div class="card">
+            <i class="fa-brands fa-openai"></i>
+            <h3>AI Services</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Development & <br>IT</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-palette"></i>
+            <h3>Design and <br>Creative</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <h3>Sales &<br> marketing</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h3>Writing & <br>Translation</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-user-tie"></i>
+            <h3>Admin &<br> support</h3>
+        </div>
+        <div class="card">
+            <i class="fa-regular fa-building-columns"></i>
+            <h3>Finance &<br>Accounting</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-scale-balanced"></i>
+            <h3>Legal</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-users"></i>
+            <h3>HR & Training</h3>
+        </div>
+        <div class="card">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Engineering &<br>Architecture</h3>
+        </div>
+    </div>
+    <div class="line1">
+        <div class="how">
+            <h2>How it works</h2>
+        </div>
+        <div class="for"><button class="hiring">For hiring</button>
+            <button class="hiring">For finding work</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box1">
+            <div class="video"><video controls autoplay muted
+                    src="https://acquisition-ui-assets.static-upwork.com/brontes/hiw-v2/hiw-client.mp4"></video></div>
+            <div class="font">
+                <p>Posting jobs is always free</p>
+                <button class="hover">Create a job</button>
+            </div>
+        </div>
+        <div class="box2">
+            <img src="https://acquisition-ui-assets.static-upwork.com/brontes/hiw-v2/for_hiring_3.png" alt="">
+            <div class="font">
+                <p>Get proposals & hire</p>
+                <button class="hover">View pricing</button>
+            </div>
+        </div>
+        <div class="box3">
+            <img src="https://acquisition-ui-assets.static-upwork.com/brontes/hp-2026/hiw-for-hiring-1-space-solutions-grd-06.jpg"
+                alt="">
+            <div class="font">
+                <p>Pay when work is done</p>
+                <button class="hover">Explore results</button>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="part1">
+            <div class="hero-content">
+                <h1 class="head">Get inside into <br>Freelancer pricing</h1>
+                <p class="w">We'll calculate the average cost for freelancers with the<br> skills you need.
+                </p>
+            </div><br><br><br><br><br>
+            <div class="search-container">
+                <input type="text" placeholder=" To start,Describe what you need done.">
+                <button class="search-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    Search
+                </button>
+            </div>
+        </div>
+        <div class="part2">
+            <video autoplay loop muted playsinline class="bg-video">
+                <source src="vid.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <h1 class="center1">Choose how you want to hire</h1><br><br>
+    <p class="center2">Flexible options designed to fit your hiring needs</p>
+    <section class="pricing-section">
+
+        <div class="hire-card">
+
+            <div class="card-top">
+                <h2>Basic</h2>
+                <p>For occasional hiring and one-off projects</p>
+            </div>
+
+            <div class="card-content">
+                <p>
+                    Hire skilled freelancers fast without long-term commitments or extra overhead.
+                </p>
+
+                <hr>
+
+                <h3>Basic includes:</h3>
+
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Marketplace access</li>
+                    <li><i class="fa-solid fa-check"></i> Talent profiles</li>
+                    <li><i class="fa-solid fa-check"></i> Hiring tools</li>
+                    <li><i class="fa-solid fa-check"></i> Project workspace</li>
+                    <li><i class="fa-solid fa-check"></i> Protected payments</li>
+                </ul>
+            </div>
+
+            <button class="btn-basic">
+                Get started for free
+            </button>
+
+        </div>
+
+
+        <div class="hire-card featured">
+
+            <div class="card-top">
+                <h2>Business Plus</h2>
+                <p>For ongoing work, repeat hiring, and teams</p>
+            </div>
+
+            <div class="card-content">
+                <p>
+                    Premium tools, vetted talent, and team controls for running freelance work at scale.
+                </p>
+
+                <hr>
+
+                <h3>Everything in Basic, plus:</h3>
+
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Curated shortlists</li>
+                    <li><i class="fa-solid fa-check"></i> Expert-vetted talent</li>
+                    <li><i class="fa-solid fa-check"></i> Team workspace</li>
+                    <li><i class="fa-solid fa-check"></i> Centralized billing</li>
+                    <li><i class="fa-solid fa-check"></i> Priority support</li>
+                </ul>
+                <button class="btn-basic">
+                    Get started for free
+                </button>
+    </section>
+    <h3 class="green">Compare features across plans.</h3>
+    <h1 class="margin">Proven results on Upwork</h1>
+    <section class="testimonial-section">
+
+        <div class="testimonial-card">
+            <p class="quote">
+                "Upwork is paramount to the success that we've had. We can't accomplish
+                what we do without our Upwork staff."
+            </p>
+
+            <div class="profile">
+                <div>
+                    <h4>Bryan Goltzman, CEO</h4>
+                    <span>Liquid Screen Design</span>
+                </div>
+                <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/testimonials-item-2.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="quote">
+                "But in this early stage, we need to be lean, targeted, and find the
+                right people."
+            </p>
+
+            <div class="profile">
+                <div>
+                    <h4>Jen Libby, CEO</h4>
+                    <span>Promly</span>
+                </div>
+                <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/testimonials-item-1.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="quote">
+                "The safety features are nice, but what really builds confidence is the
+                quality talent."
+            </p>
+
+            <div class="profile">
+                <div>
+                    <h4>Gabriel Richman</h4>
+                    <span>Omic</span>
+                </div>
+                <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/testimonials-item-3.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="quote">
+                "We discovered CTO-level expertise on the platform and gained tremendous
+                value."
+            </p>
+
+            <div class="profile">
+                <div>
+                    <h4>Saswata Basu</h4>
+                    <span>Zus</span>
+                </div>
+                <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/testimonials-item-4.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="quote">
+                "Upwork isn't just a hiring platform, it's a strategic partner for us."
+            </p>
+
+            <div class="profile">
+                <div>
+                    <h4>David Wrench</h4>
+                    <span>Datajoi</span>
+                </div>
+                <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/testimonials-item-5.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="quote">
+                "I found two awesome candidates and hired an AI freelancer through the platform."
+            </p>
+
+            <div class="profile">
+                <div>
+                    <h4>Matt See</h4>
+                    <span>Lighthouse</span>
+                </div>
+                <img src="https://acquisition-ui-assets.static-upwork.com/brontes/canopy/testimonials-item-6.jpg"
+                    alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="badge-container">
+
+    <div class="badge">
+        <div class="top">WINTER 2026</div>
+        <h3>Leader</h3>
+        <span>SMALL BUSINESS</span>
+    </div>
+
+    <div class="badge">
+        <div class="top">WINTER 2026</div>
+        <h3>Best Results</h3>
+        <span>SMALL BUSINESS</span>
+    </div>
+
+    <div class="badge">
+        <div class="top">WINTER 2026</div>
+        <h3>Best Usability</h3>
+        <span>SMALL BUSINESS</span>
+    </div>
+
+    <div class="badge">
+        <div class="top">WINTER 2026</div>
+        <h3>Easiest Setup</h3>
+        <span>MID-MARKET</span>
+    </div>
+
+    <div class="badge">
+        <div class="top">WINTER 2026</div>
+        <h3>Easiest To Use</h3>
+        <span>MID-MARKET</span>
+    </div>
+
+    <div class="badge">
+        <div class="top">WINTER 2026</div>
+        <h3>Best Meets Requirements</h3>
+        <span>MID-MARKET</span>
+    </div>
+
+</section>
+
+    <section class="cta-box">
+
+        <h1>
+            Find freelancers who can help you build what's next
+        </h1>
+
+        <button>
+            Explore freelancers
+        </button>
+
+    </section>
+    <footer class="footer">
+
+    <div class="footer-grid">
+
+        <div class="footer-column">
+            <h3>For Clients</h3>
+
+            <p>How to hire</p>
+            <p>Talent Marketplace</p>
+            <p>Project Catalog</p>
+            <p>Hire an agency</p>
+            <p>Enterprise</p>
+            <p>Business Plus</p>
+            <p>Any Hire</p>
+            <p>Contract-to-hire</p>
+            <p>Direct Contracts</p>
+            <p>Hire worldwide</p>
+            <p>Hire in the USA</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>For Talent</h3>
+
+            <p>How to find work</p>
+            <p>Direct Contracts</p>
+            <p>Find freelance jobs worldwide</p>
+            <p>Find freelance jobs in the USA</p>
+            <p>Win work with ads</p>
+            <p>Exclusive resources with Freelancer Plus</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Resources</h3>
+
+            <p>Help & Support</p>
+            <p>Success stories</p>
+            <p>Upwork reviews</p>
+            <p>Resources</p>
+            <p>Blog</p>
+            <p>Affiliate program</p>
+            <p>Refer a client</p>
+            <p>Free Business Tools</p>
+            <p>Release notes</p>
+        </div>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+
+            <p>About us</p>
+            <p>Leadership</p>
+            <p>Investor relations</p>
+            <p>Careers</p>
+            <p>Our impact</p>
+            <p>Press</p>
+            <p>Contact us</p>
+            <p>Trust, safety & security</p>
+            <p>Modern slavery statement</p>
+        </div>
+
+    </div>
+<div class="footer-bottom">
+
+    <div class="social-icons">
+
+        <p>Follow us</p>
+
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-instagram"></i>
+
+    </div>
+
+    <div class="mobile-icons">
+
+        <p>Mobile app</p>
+
+        <i class="fa-brands fa-apple"></i>
+        <i class="fa-brands fa-android"></i>
+
+    </div>
+
+</div>
+</footer>
+</body>
+
+</html>
