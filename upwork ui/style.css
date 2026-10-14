@@ -56,6 +56,7 @@ a {
     display: flex;
     align-items: center;
     gap: 12px;
+     flex-wrap:nowrap;
 }
 
 .buttons {
@@ -864,3 +865,212 @@ background-size: cover;
 .social-icons i:hover,
 .mobile-icons i:hover{
     color:#14a800 !important}
+    /* =========================
+   LAPTOP 1040px
+========================= */
+
+@media screen and (max-width:1040px){
+
+    .cards{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .clients{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+
+    .container{
+        flex-wrap:wrap;
+        height:auto;
+        gap:20px;
+    }
+
+    .box1,
+    .box2,
+    .box3{
+        width:48%;
+    }
+
+    .pricing-section{
+        flex-direction:column;
+    }
+
+    .testimonial-section{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .cta-box h1{
+        font-size:42px;
+    }
+}
+
+/* =========================
+   TABLET 768px
+========================= */
+
+@media screen and (max-width:768px){
+
+    .header{
+        flex-direction:column;
+        height:auto;
+        gap:15px;
+        padding:20px;
+    }
+
+    .item{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .line,
+    .line1,
+    .hero-section,
+    .container,
+    .container2{
+        width:95%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero-section{
+        padding:40px 20px;
+    }
+
+    .hero-content h1{
+        font-size:38px;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .container{
+        flex-direction:column;
+        height:auto;
+    }
+
+    .box1,
+    .box2,
+    .box3{
+        width:100%;
+    }
+
+    .container2{
+        flex-direction:column;
+        height:auto;
+    }
+
+    .part1,
+    .part2{
+        width:100%;
+    }
+
+    .pricing-section{
+        flex-direction:column;
+    }
+
+    .testimonial-section{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+        gap:30px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .cta-box{
+        height:auto;
+        padding:40px 20px;
+    }
+
+    .cta-box h1{
+        font-size:32px;
+    }
+    @media (max-width:425px){
+
+    .header{
+        padding:10px 15px;
+        height:auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .item{
+        display:flex;
+        align-items:center;
+        gap:12px;
+    }
+
+    /* sirf 2 links rakho */
+    .item a:nth-child(4),
+    .item a:nth-child(5),
+    .item a:nth-child(6){
+        display:none;
+    }
+
+    .item a{
+        font-size:14px;
+    }
+
+    .logo{
+        width:45px;
+        height:45px;
+    }
+
+    .btn1{
+        display:none;
+    }
+
+    .btn2{
+        width:80px;
+        height:42px;
+        font-size:13px;
+    }
+}
+
+/* 375px */
+
+@media (max-width:375px){
+
+    /* sirf Hire talent */
+    .item a:nth-child(3),
+    .item a:nth-child(4),
+    .item a:nth-child(5),
+    .item a:nth-child(6){
+        display:none;
+    }
+
+    .item{
+        gap:8px;
+    }
+
+    .item a{
+        font-size:13px;
+    }
+
+    .btn2{
+        width:75px;
+        height:40px;
+    }
+}
+}
+body{
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+}
+

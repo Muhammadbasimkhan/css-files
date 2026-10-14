@@ -385,3 +385,303 @@ body {
     .right{
        backface-visibility: initial;
     }
+    /* ========== 1024px ========== */
+@media (max-width: 1024px) {
+.main {
+padding: 15px;
+gap: 15px;
+}
+
+.left {
+    width: 210px;
+    flex-shrink: 0;
+}
+
+.middle {
+    width: auto;
+    max-width: 500px;
+}
+
+.right {
+    width: 150px;
+    flex-shrink: 0;
+}
+
+nav .box1 button {
+    width: 40px;
+}
+
+nav .box2 button {
+    width: 40px;
+    height: 40px;
+}
+
+.inputbox {
+    margin-right: 0;
+}
+
+}
+
+/* ========== 768px ========== */
+@media (max-width: 768px) {
+nav {
+padding: 8px;
+}
+
+nav .box1 button {
+    width: 35px;
+    font-size: 18px;
+}
+
+nav .box2 button {
+    width: 35px;
+    height: 35px;
+}
+
+.main {
+    height: auto;
+    min-height: calc(100vh - 55px);
+    padding: 12px;
+    gap: 0;
+    justify-content: center;
+}
+
+.left,
+.right {
+    display: none;
+}
+
+.middle {
+    width: 100%;
+    max-width: 500px;
+    max-height: none;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.postbody {
+    height: auto;
+}
+
+.postbody video {
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    object-fit: contain !important;
+}
+
+.postbody .hi2 {
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+}
+
+/* ========== 425px ========== */
+@media (max-width: 425px) {
+nav {
+height: 55px;
+padding: 5px 8px;
+gap: 5px;
+}
+
+nav .search img {
+    width: 35px;
+    height: 35px;
+}
+
+nav .search input {
+    width: 125px;
+    height: 32px;
+    font-size: 12px;
+}
+
+/* Hide the middle navbar icons on mobile */
+nav .box1 {
+    display: none;
+}
+
+nav .box2 {
+    gap: 4px;
+}
+
+nav .box2 button {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+}
+
+.main {
+    padding: 10px 8px;
+}
+
+.middle {
+    width: 100%;
+    gap: 12px;
+}
+
+.sec2 {
+    padding: 10px;
+}
+
+.my2 {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+}
+
+.inputbox {
+    font-size: 12px;
+    padding: 6px;
+}
+
+#pic {
+    gap: 6px;
+    align-items: center;
+}
+
+#pic i {
+    font-size: 19px;
+}
+
+#stories {
+    margin-top: 5px;
+}
+
+.story1,
+.story2,
+.story3,
+.story4,
+.story5 {
+    flex-basis: 90px;
+    width: 90px;
+    height: 140px;
+}
+
+.my4 {
+    height: 110px;
+}
+
+.post {
+    padding: 10px;
+    border-width: 2px;
+    margin-top: 5px;
+}
+
+.posthead {
+    gap: 8px;
+}
+
+.name1 {
+    font-size: 14px;
+}
+
+.posthead small {
+    font-size: 11px;
+}
+
+.postbody {
+    height: auto;
+}
+
+.postbody video {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+    object-fit: contain !important;
+}
+
+.postbody .hi2 {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.post-footer button {
+    font-size: 12px;
+    padding: 9px 2px;
+}
+
+.post-footer i {
+    font-size: 15px;
+    margin-right: 3px;
+}
+
+}
+
+/* ========== 375px ========== */
+@media (max-width: 375px) {
+nav {
+padding: 5px;
+gap: 3px;
+}
+
+nav .search img {
+    width: 30px;
+    height: 30px;
+}
+
+nav .search input {
+    width: 110px;
+    font-size: 11px;
+}
+
+nav .box2 {
+    gap: 2px;
+}
+
+nav .box2 button {
+    width: 29px;
+    height: 29px;
+    font-size: 12px;
+}
+
+.main {
+    padding: 8px 5px;
+}
+
+.sec2 {
+    padding: 8px;
+}
+
+.my2 {
+    width: 34px;
+    height: 34px;
+}
+
+.inputbox {
+    font-size: 11px;
+}
+
+#pic {
+    gap: 4px;
+}
+
+#pic i {
+    font-size: 17px;
+}
+
+.story1,
+.story2,
+.story3,
+.story4,
+.story5 {
+    flex-basis: 85px;
+    width: 85px;
+    height: 130px;
+}
+
+.my4 {
+    height: 100px;
+}
+
+.post {
+    padding: 8px;
+}
+
+.post-footer button {
+    font-size: 11px;
+}
+
+}

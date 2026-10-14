@@ -484,3 +484,609 @@ h3 {
     color: grey;
     font-size: small;
 }
+
+@media screen and (max-width: 1024px) {
+
+.text h1,
+.text-2 h1,
+.text-3 h1 {
+    font-size: 48px;
+}
+
+.text h2,
+.text-2 h2,
+.text-3 h2 {
+    font-size: 29px;
+}
+
+.iphone-img img {
+    width: 90%;
+}
+
+.iphone-img1 img {
+    width: 400px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.iphone-img2 img {
+    width: 90%;
+}
+
+.iphone-img4 img {
+    width: 90%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.iphone-img7 img {
+    width: 100%;
+    height: 320px;
+}
+
+.h1 {
+    font-size: 27px;
+    letter-spacing: 5px;
+}
+
+.up {
+    font-size: 25px;
+}
+
+.container1 {
+    gap: 10px;
+}
+
+.footer {
+    flex-wrap: wrap;
+    gap: 25px 0;
+}
+
+.footer > div {
+    width: 20%;
+}
+
+}
+
+/* =========================
+768px TABLET
+========================= */
+
+@media screen and (max-width: 768px) {
+
+.header {
+    height: 55px;
+    padding: 0 15px;
+}
+
+.part2 {
+    gap: 20px;
+}
+
+.body-1 {
+    height: 480px;
+}
+
+.text,
+.text-2,
+.text-3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text h1,
+.text-2 h1,
+.text-3 h1 {
+    font-size: 40px;
+}
+
+.text h2,
+.text-2 h2,
+.text-3 h2 {
+    font-size: 25px;
+}
+
+.text-2 p {
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.iphone-img {
+    height: 300px;
+    margin-top: 20px;
+}
+
+.iphone-img img {
+    width: 95%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.body-2 {
+    height: auto;
+    min-height: 480px;
+}
+
+.iphone-img1 {
+    height: 280px;
+    margin: 15px 0 0;
+}
+
+.iphone-img1 img {
+    width: 90%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.body-12 {
+    height: auto;
+    min-height: 500px;
+    padding-bottom: 25px;
+}
+
+.iphone-img2 {
+    height: 300px;
+}
+
+.iphone-img2 img {
+    height: 100%;
+    width: 95%;
+    object-fit: contain;
+}
+
+h3,
+h4 {
+    font-size: 23px;
+    padding: 0 12px;
+}
+
+.h1 {
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+
+.container1 {
+    height: auto;
+    min-height: 470px;
+    gap: 8px;
+}
+
+.container1 > div {
+    width: calc(50% - 4px);
+    min-width: 0;
+    min-height: 470px;
+    height: auto;
+    overflow: hidden;
+}
+
+.iphone-img3 img,
+.iphone-img5 img,
+.iphone-img6 img,
+.iphone-img7 img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+}
+
+.iphone-img4 img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.watch,
+.watch1 {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.buttons {
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.buttons .btn1,
+.buttons .btn2,
+.buttons .btn3 {
+    height: 43px;
+    font-size: 15px;
+}
+
+.left2 {
+    position: relative;
+}
+
+.bg {
+    display: block;
+}
+
+.content4 {
+    padding: 10px;
+}
+
+.text4 h4 {
+    font-size: 18px;
+}
+
+.enter {
+    height: auto;
+    min-height: 0;
+    gap: 15px;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+.enter img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    flex-wrap: wrap;
+    gap: 25px 0;
+    padding: 20px;
+}
+
+.footer > div {
+    width: 33.33%;
+}
+
+.textarea {
+    padding: 10px;
+}
+
+}
+
+/* =========================
+425px MOBILE
+========================= */
+
+@media screen and (max-width: 425px) {
+
+.header {
+    height: 50px;
+    padding: 0 12px;
+}
+
+.apple-logo {
+    width: 23px;
+    height: 23px;
+}
+
+.part2 {
+    gap: 18px;
+    padding: 5px;
+}
+
+.body-1 {
+    height: 400px;
+}
+
+.text h1,
+.text-2 h1,
+.text-3 h1 {
+    font-size: 32px;
+}
+
+.text h2,
+.text-2 h2,
+.text-3 h2 {
+    font-size: 21px;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.buttons {
+    gap: 10px;
+}
+
+.buttons .btn1,
+.buttons .btn2,
+.buttons .btn3 {
+    height: 40px;
+    font-size: 14px;
+}
+
+.buttons .btn1,
+.buttons .btn3 {
+    width: 110px;
+}
+
+.buttons .btn2 {
+    width: 65px;
+}
+
+.iphone-img {
+    height: 230px;
+    margin-top: 15px;
+}
+
+.iphone-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.body-2 {
+    min-height: 0;
+    padding-bottom: 15px;
+}
+
+.text-2 p {
+    font-size: 14px;
+}
+
+.iphone-img1 {
+    height: 220px;
+    margin: 10px 0 0;
+}
+
+.iphone-img1 img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+}
+
+.body-12 {
+    min-height: 0;
+    padding: 15px 0 25px;
+}
+
+.watch,
+.watch1 {
+    margin-top: 10px;
+}
+
+.apple-logo1,
+.apple-logo2 {
+    width: 25px;
+    height: 25px;
+}
+
+.h1 {
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.iphone-img2 {
+    height: 230px;
+}
+
+.iphone-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h3,
+h4 {
+    font-size: 19px;
+}
+
+.container1 {
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.container1 > div {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    padding: 15px 8px 0;
+}
+
+.iphone-img3 img,
+.iphone-img5 img,
+.iphone-img6 img,
+.iphone-img7 img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.iphone-img4 img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+}
+
+.text-3 h1 {
+    font-size: 34px;
+}
+
+.up {
+    font-size: 25px;
+}
+
+.center {
+    text-align: center;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.left2 {
+    width: 100%;
+    height: 350px !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content4 {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.text4 h1 {
+    font-size: 30px;
+}
+
+.text4 h4 {
+    font-size: 17px;
+}
+
+.enter {
+    padding: 20px 0;
+    gap: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.enter .card {
+    font-size: 28px;
+}
+
+.enter img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer {
+    gap: 25px 10px;
+    padding: 15px;
+}
+
+.footer > div {
+    width: calc(50% - 5px);
+}
+
+.foot {
+    font-size: 11px;
+    overflow-wrap: anywhere;
+}
+
+.footer h5 {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+}
+
+/* =========================
+375px SMALL MOBILE
+========================= */
+
+@media screen and (max-width: 375px) {
+
+.header {
+    padding: 0 8px;
+}
+
+.part2 {
+    gap: 14px;
+}
+
+.body-1 {
+    height: 370px;
+}
+
+.text h1,
+.text-2 h1,
+.text-3 h1 {
+    font-size: 28px;
+}
+
+.text h2,
+.text-2 h2,
+.text-3 h2 {
+    font-size: 19px;
+}
+
+.iphone-img {
+    height: 210px;
+}
+
+.iphone-img1,
+.iphone-img1 img {
+    height: 190px;
+}
+
+.iphone-img2 {
+    height: 210px;
+}
+
+.h1 {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.apple-logo1,
+.apple-logo2 {
+    width: 22px;
+    height: 22px;
+}
+
+.buttons .btn1,
+.buttons .btn3 {
+    width: 100px;
+    font-size: 13px;
+}
+
+.buttons .btn2 {
+    width: 60px;
+    font-size: 13px;
+}
+
+.container1 > div {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.iphone-img3 img,
+.iphone-img5 img,
+.iphone-img6 img,
+.iphone-img7 img {
+    height: 220px;
+}
+
+.iphone-img4 img {
+    height: 210px;
+}
+
+.left2 {
+    height: 310px !important;
+}
+
+.text4 h1 {
+    font-size: 26px;
+}
+
+.text4 h4 {
+    font-size: 15px;
+}
+
+.enter .card {
+    font-size: 25px;
+}
+
+.footer {
+    padding: 12px;
+    gap: 20px 8px;
+}
+
+.footer > div {
+    width: calc(50% - 4px);
+}
+
+.foot {
+    font-size: 10px;
+}
+
+}
+
