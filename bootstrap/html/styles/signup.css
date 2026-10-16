@@ -1,0 +1,68 @@
+.text{
+    text-align: center;
+color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-top: 10px;
+}
+ body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-box {
+            max-width: 675px;
+            background-color: white;
+            margin: 40px auto;
+            padding: 40px 53px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .store-name {
+            color: #3075f5;
+            font-size: 38px;
+            font-weight: bold;
+        }
+
+        .form-control {
+            height: 64px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        .form-label {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .create-btn {
+            height: 68px;
+            font-size: 22px;
+            background-color: #3075f5;
+            border: none;
+            border-radius: 9px;
+        }
+
+        .create-btn:hover {
+            background-color: #1558d6;
+        }
+
+        @media (max-width: 576px) {
+            .form-box {
+                margin: 15px;
+                padding: 25px 20px;
+            }
+
+            .store-name {
+                font-size: 29px;
+            }
+
+            .form-label {
+                font-size: 17px;
+            }
+
+            .form-control {
+                height: 55px;
+                font-size: 17px;
+            }
+        }
